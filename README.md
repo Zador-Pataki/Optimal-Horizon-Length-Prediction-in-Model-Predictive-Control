@@ -7,6 +7,9 @@ A group project for the course Control and Optimization with Applications in Rob
 
 MPC controllers predict input sequences over finite time horizons of planned paths. If the time-horizon is too long, the computational time of the problem is increased, introducing latency into the system. On the ohter hand, predictions over shorter time-horizons may be suboptimal. In this project, we explore the ability of neural networks to select time-horizons based on planned trajectories, optimizing the trade-off between complexity and optimality. 
 
+## Code
+### Horizon_Predictor.ipynb
+File containing Neural Network frameowrk, and is also responsible for training and gridsearch of model and optmizer parameters. The criterion used to guide the optimization of our model is a scalar sum of the horizon length at any given time step, and the trajectory error: distance between the planned trajectory and the resulting trajectory as a result of the planned sequence of inputs. 
 
 
 
