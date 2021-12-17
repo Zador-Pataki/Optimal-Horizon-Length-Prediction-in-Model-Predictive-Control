@@ -11,5 +11,19 @@ MPC controllers predict input sequences over finite time horizons of planned pat
 ### Horizon_Predictor.ipynb
 File containing Neural Network frameowrk, and is also responsible for training and gridsearch of model and optmizer parameters. The criterion used to guide the optimization of our model is a scalar sum of the horizon length at any given time step, and the trajectory error: distance between the planned trajectory and the resulting trajectory as a result of the planned sequence of inputs. 
 
+### quad_sim.py
+Given quadrotor model and trajectory, this function is used to simulate the MPC process of the quadrotor.
+
+### quadrotor.py
+This code is used to model the dynamics of the quadrotor.
+
+### quadrotorTrajectory.ipynb
+Extracted from one of the homeworks of the course, this notebook governs the the entire framework of the quadrotor. 
+
+### quadrotorTrajectory_dataGeneration.ipynb
+Extracted from one of the homeworks of the course, this notebook governs the the entire framework of the quadrotor. Additionally, the notebook was modified to be used as a data extractor. Using various trajectories, MPC is applied with different horizon lenghts, and states and observations are collected throughout the process.
+
+
+
 
 
